@@ -26,4 +26,13 @@ function isEven(num) {
   return num % 2 === 0 ? "Even" : "ODD";
 }
 console.log(isEven(7));
+
+/* Problem 4 */
+function numberCount(num) {
+  if (num === 0) {
+    return "Zero";
+  }
+  return num > 1 ? "Positive" : "Negative";
+}
+console.log(numberCount(-1));
 const arr = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13];
