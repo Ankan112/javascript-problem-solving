@@ -35,4 +35,18 @@ function numberCount(num) {
   return num > 1 ? "Positive" : "Negative";
 }
 console.log(numberCount(-1));
+
+/* Problem 5 */
+function shop(number) {
+  if (number > 20000) {
+    return "Gucci Bag \nGucci Belt";
+  } else if (number <= 20000 && number >= 10000) {
+    return "Gucci Bag";
+  } else if (number >= 5000) {
+    return "Levis Bag";
+  } else {
+    return "Something from New Market";
+  }
+}
+console.log(shop(20001));
 const arr = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13];
