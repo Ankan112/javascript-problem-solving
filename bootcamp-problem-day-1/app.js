@@ -69,8 +69,10 @@ console.log(remDupliEle(arr));
 const largestNumber = Math.max(...arr);
 const SmallestNumber = Math.min(...arr);
 console.log(largestNumber, SmallestNumber);
+
+// Problem 8
 /* 
-
-
 How to slice(22, 48) from this array
 */
+const result = arr.slice(5, 7);
+console.log(result);
