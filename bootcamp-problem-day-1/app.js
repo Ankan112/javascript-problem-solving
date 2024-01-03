@@ -53,6 +53,7 @@ console.log(shop(20001));
 
 const arr = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13];
 // way 1
+// How to remove duplicate elements from this array?
 function remoteDuplicateElements(data) {
   return [...new Set(data)];
 }
@@ -63,8 +64,13 @@ function remDupliEle(data) {
 console.log(remoteDuplicateElements(arr));
 console.log(remDupliEle(arr));
 
+/* Problem 7 */
+// How to find out the largest/lowest elements from this array?
+const largestNumber = Math.max(...arr);
+const SmallestNumber = Math.min(...arr);
+console.log(largestNumber, SmallestNumber);
 /* 
-How to remove duplicate elements from this array?
-How to find out the largest/lowest elements from this array?
+
+
 How to slice(22, 48) from this array
 */
