@@ -51,7 +51,7 @@ function shop(number) {
 console.log(shop(20001));
 /* Problem 6 */
 
-const arr = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13];
+const arr = [1, 5, 9, 14, 5, 22, 48, 25, 22, 20, 9, 13, 14];
 // way 1
 // How to remove duplicate elements from this array?
 function remoteDuplicateElements(data) {
@@ -74,5 +74,5 @@ console.log(largestNumber, SmallestNumber);
 /* 
 How to slice(22, 48) from this array
 */
-const result = arr.slice(5, 7);
+const result = arr.slice(5, 7) + 4;
 console.log(result);
