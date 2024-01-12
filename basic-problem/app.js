@@ -1,4 +1,5 @@
-const country = "India, Pakistan, Nepal, Srilanka, Bangladesh";
+const country =
+  "India, Pakistan, Nepal, Srilanka, Bangladesh, Maldives, Australia";
 
 const result = country.match(/[aeiou]/gi).length;
 
