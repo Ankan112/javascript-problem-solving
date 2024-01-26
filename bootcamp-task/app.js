@@ -72,3 +72,29 @@ function sortCarsByYear(carList) {
 
 const sortedCars = sortCarsByYear(cars);
 // console.log(sortedCars); //Output
+
+//! Task: Find and Modify
+// Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
+
+const people2 = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+  { name: "David", age: 28 },
+];
+
+function findAndModifyPerson(peopleList, nameToFind, newAge) {
+  const foundPerson = peopleList.find((person) => person.name === nameToFind);
+
+  if (foundPerson) {
+    foundPerson.age = newAge;
+    console.log(`Person ${nameToFind} found and age updated to ${newAge}`);
+  } else {
+    console.log(`Person ${nameToFind} not found`);
+  }
+
+  return peopleList;
+}
+
+const updatedPeople = findAndModifyPerson(people2, "Bob", 31);
+// console.log("Updated array:", updatedPeople); // Output
