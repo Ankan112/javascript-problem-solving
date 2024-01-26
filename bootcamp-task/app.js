@@ -183,3 +183,20 @@ const students = [
 
 const sortedStudents = sortStudentsByAvgGrade(students);
 // console.log(sortedStudents); // Output
+
+//! Task: Functional Programming - Reduce
+// Write a function that uses the reduce function to calculate the total value of an array of objects with a 'quantity' and 'price' property.interview
+
+function calculateTotalValue(items) {
+  return items.reduce((total, item) => total + item.quantity * item.price, 0);
+}
+
+// Example usage:
+const items = [
+  { name: "Apple", quantity: 5, price: 30 },
+  { name: "Banana", quantity: 3, price: 10 },
+  { name: "Orange", quantity: 2, price: 25 },
+];
+
+const totalValue = calculateTotalValue(items);
+// console.log("Total value:", totalValue); // Output
