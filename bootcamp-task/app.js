@@ -32,4 +32,26 @@ function extractTitles(bookList) {
 }
 
 const bookTitles = extractTitles(books);
-console.log(bookTitles); // Output
+// console.log(bookTitles); // Output
+
+//! Task: Function Composition
+// Write three functions: one to square a number, one to double a number, and one to add 5 to a number. Compose these functions to create a new function that squares a number, doubles the result, and then adds 5.
+
+function square(x) {
+  return x * x;
+}
+
+function double(x) {
+  return x * 2;
+}
+
+function addFive(x) {
+  return x + 5;
+}
+
+const combinedFunction = (x) => addFive(double(square(x)));
+
+const number = 2;
+const result = combinedFunction(number);
+
+console.log(`Number: ${number}, Result: ${result}`); // Output
