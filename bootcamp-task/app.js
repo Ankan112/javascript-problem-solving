@@ -200,3 +200,16 @@ const items = [
 
 const totalValue = calculateTotalValue(items);
 // console.log("Total value:", totalValue); // Output
+
+//! Task: Array Intersection
+// Write a function that takes two arrays and returns a new array containing only the elements that appear in both arrays.
+
+function arrayIntersection(arr1, arr2) {
+  return [...new Set(arr1.filter((value) => arr2.includes(value)))];
+}
+
+// Example usage:
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [3, 4, 5, 6, 7];
+const intersection = arrayIntersection(arr1, arr2);
+// console.log(intersection); // Output: [3, 4, 5]
