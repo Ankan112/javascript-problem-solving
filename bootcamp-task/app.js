@@ -124,3 +124,12 @@ function isLeapYear(year) {
 }
 
 // console.log("isLeapYear", isLeapYear(2040)); //Output
+
+//! Task: Count Vowels:
+// Write a function that counts the number of vowels in a given string.
+// Example: Happy New Year
+
+const string = "Happy New Year";
+const result2 = string.match(/[aeiou]/gi).length;
+
+// console.log("Total vowels are:", result2); //Output
