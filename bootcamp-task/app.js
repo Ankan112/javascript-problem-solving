@@ -157,3 +157,29 @@ function findMaxValue(numbers) {
 
 const maxValue = findMaxValue(numbers3);
 // console.log("The maximum value is:", maxValue); //Output
+
+//! Task: Advanced Sorting
+// Create an array of objects representing students with 'name' and 'grades' properties. Write a function to sort the students by average grade in descending order.
+
+function sortStudentsByAvgGrade(students) {
+  return students.reduce((sorted, student) => {
+    const avgGrade =
+      student.grades.reduce((sum, grade) => sum + grade, 0) /
+      student.grades.length;
+    const insertPos = sorted.findIndex((s) => s.avgGrade < avgGrade);
+    return sorted.splice(insertPos === -1 ? sorted.length : insertPos, 0, {
+      ...student,
+      avgGrade,
+    });
+  }, []);
+}
+
+// Example usage:
+const students = [
+  { name: "Alice", grades: [80, 90, 75] },
+  { name: "Bob", grades: [75, 85, 95] },
+  { name: "Charlie", grades: [95, 80, 85] },
+];
+
+const sortedStudents = sortStudentsByAvgGrade(students);
+// console.log(sortedStudents); // Output
