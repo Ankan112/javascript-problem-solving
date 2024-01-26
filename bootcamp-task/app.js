@@ -145,3 +145,15 @@ function getUniqueNumbers(numArray) {
 
 const uniqueNumbers = getUniqueNumbers(numbers2);
 // console.log("Unique numbers:", uniqueNumbers); //Output
+
+//! Task: Find Maximum Value:
+// Write a function that takes an array of numbers and returns the maximum value.
+
+const numbers3 = [5, 10, 15, 2, 7];
+
+function findMaxValue(numbers) {
+  return Math.max(...numbers);
+}
+
+const maxValue = findMaxValue(numbers3);
+// console.log("The maximum value is:", maxValue); //Output
