@@ -133,3 +133,15 @@ const string = "Happy New Year";
 const result2 = string.match(/[aeiou]/gi).length;
 
 // console.log("Total vowels are:", result2); //Output
+
+//! Task: Unique Values
+// Create an array of numbers with some duplicate values. Write a function to filter out the duplicate values and return a new array with only unique numbers. Print the result.
+
+const numbers2 = [1, 2, 3, 1, 4, 5, 2, 6, 7, 3];
+
+function getUniqueNumbers(numArray) {
+  return Array.from(new Set(numArray));
+}
+
+const uniqueNumbers = getUniqueNumbers(numbers2);
+// console.log("Unique numbers:", uniqueNumbers); //Output
