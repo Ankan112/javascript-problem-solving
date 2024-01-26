@@ -88,9 +88,9 @@ function findAndModifyPerson(peopleList, nameToFind, newAge) {
 
   if (foundPerson) {
     foundPerson.age = newAge;
-    console.log(`Person ${nameToFind} found and age updated to ${newAge}`);
+    // console.log(`Person ${nameToFind} found and age updated to ${newAge}`);
   } else {
-    console.log(`Person ${nameToFind} not found`);
+    // console.log(`Person ${nameToFind} not found`);
   }
 
   return peopleList;
@@ -98,3 +98,21 @@ function findAndModifyPerson(peopleList, nameToFind, newAge) {
 
 const updatedPeople = findAndModifyPerson(people2, "Bob", 31);
 // console.log("Updated array:", updatedPeople); // Output
+
+//! Task: Array Reduction
+// Create an array of numbers. Write a function that uses the reduce method to calculate the sum of all even numbers in the array.
+
+const numbers = [12, 5, 8, 130, 44, 9, 30];
+
+function sumEvenNumbers(numArray) {
+  return numArray.reduce((accumulator, currentValue) => {
+    if (currentValue % 2 === 0) {
+      return accumulator + currentValue;
+    } else {
+      return accumulator;
+    }
+  }, 0); // Initial value of accumulator is 0
+}
+
+const sumOfEvens = sumEvenNumbers(numbers);
+// console.log("Sum of even numbers:", sumOfEvens); //Output
