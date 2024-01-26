@@ -213,3 +213,26 @@ const arr1 = [1, 2, 3, 4, 5];
 const arr2 = [3, 4, 5, 6, 7];
 const intersection = arrayIntersection(arr1, arr2);
 // console.log(intersection); // Output: [3, 4, 5]
+
+//! Task: Object Transformation
+// Create an array of objects representing customers with 'name', 'purchases', and 'loyaltyPoints' properties. Write a function to transform the array by doubling the 'loyaltyPoints' of customers with more than 5 purchases.
+
+function transformCustomers(customers) {
+  return customers.map((customer) => ({
+    ...customer,
+    loyaltyPoints:
+      customer.purchases > 5
+        ? customer.loyaltyPoints * 2
+        : customer.loyaltyPoints,
+  }));
+}
+
+// Example usage:
+const customers = [
+  { name: "Alice", purchases: 3, loyaltyPoints: 100 },
+  { name: "Bob", purchases: 7, loyaltyPoints: 200 },
+  { name: "Charlie", purchases: 2, loyaltyPoints: 50 },
+];
+
+const transformedCustomers = transformCustomers(customers);
+// console.log(transformedCustomers); //Output
